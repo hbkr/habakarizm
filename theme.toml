@@ -1,0 +1,12 @@
+name = "Habakarizm"
+license = "MIT"
+licenselink = "https://github.com/hbkr/habakarizm/blob/master/LICENSE.md"
+description = "Ill weeds grow apace. Simple blog theme for Hugo."
+homepage = "http://ieiri.net/"
+tags = ["blog"]
+features = ["blog", "themes"]
+min_version = 0.14
+
+[author]
+  name = "Kazuma Ieiri"
+  homepage = "http://ieiri.net/"

@@ -1,0 +1,12 @@
+    <footer role="contentinfo">
+        <div class="hr"></div>
+        <div class="footer-link">
+            {{ with .Site.Params.email }}<span><a href="mailto:{{ . }}" target="_blank">Email</a></span>{{ end }}
+            {{ with .Site.Params.twitter }}<span><a href="{{ . }}" target="_blank">Twitter</a></span>{{ end }}
+        </div>
+        <div class="copyright">Copyright &copy; {{ .Site.Params.copyright }}</div>
+    </footer>
+</div>
+
+</body>
+</html>
