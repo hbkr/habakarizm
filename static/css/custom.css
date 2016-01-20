@@ -1,8 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
+
 body {
-    font-family:  "Abel" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "YuGothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    font-family: "Noto Serif" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+
     font-weight:300;
     background-color: #FFF;
+    border-top: 3px solid #000;
 }
 
 a { color:#000;}
@@ -22,10 +25,17 @@ img {
   border: 0;
 }
 
-header,
-footer {
+header {
   margin: 4rem 0;
   text-align: center;
+}
+
+footer {
+  margin: 4rem 0;
+  margin-bottom: 1rem;
+  text-align: left;
+    font-size: 1.2rem;
+
 }
 
 main {
@@ -61,7 +71,7 @@ main {
 .entry-meta {
   display: inline-block;
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #888;
 }
 
@@ -89,11 +99,8 @@ ul.pagination li a {
     text-decoration: none;
 }
 
-.hr {
-  height: 1px;
-  margin: 2rem 0;
-  background: #E1E1E1;
-  background: -webkit-gradient(linear, left top, right top, from(#F8F8F8), color-stop(#E1E1E1), to(#F8F8F8));
-  background: -webkit-linear-gradient(left, #F8F8F8, #E1E1E1, #F8F8F8);
-  background: linear-gradient(to right, #F8F8F8, #E1E1E1, #F8F8F8);
+hr {
+  width:7px;
+  border-color:red;
+  margin-left:0;
 }
