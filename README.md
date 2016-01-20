@@ -1,4 +1,4 @@
-# HABAKARIZM
+# Habakarizm
 
 Ill weeds grow apace. Simple blog theme for Hugo.
 
