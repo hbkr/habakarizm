@@ -7,7 +7,7 @@
             <h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
             <p class="article-summary">{{ .Summary }}
-            {{ if .Truncated }}<a href="{{ .Permalink }}"><a href="{{ .Permalink }}">… Read more</a>{{ end }}
+            {{ if .Truncated }}<a href="{{ .Permalink }}"><a href="{{ .Permalink }}"><span class="readmore">… Read more</span></a>{{ end }}
             </p>
             <hr>
         </article>
@@ -15,8 +15,21 @@
     </main>
 
     <nav>
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-        {{ template "_internal/pagination.html" . }}
+
+<div class="pagination">
+  {{ if $paginator.HasNext }}
+  <a class="pagination-item older" href="{{ $paginator.Next.URL }}">Older</a>
+  {{ else }}
+  <span class="pagination-item older">Older</span>
+  {{ end }}
+ |
+  {{ if $paginator.HasPrev }}
+  <a class="pagination-item newer" href="{{ $paginator.Prev.URL }}">Newer</a>
+  {{ else }}
+  <span class="pagination-item newer">Newer</span>
+  {{ end }}
+</div>
+
     </nav>
 
 {{ partial "footer.html" . }}

@@ -75,6 +75,10 @@ main {
   color: #888;
 }
 
+.readmore {
+  font-size:1.2rem;
+}
+
 .footer-link {
   margin: 2rem 0;
 }
