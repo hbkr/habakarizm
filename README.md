@@ -11,6 +11,27 @@ Clone this repository to your hugo theme directory.
 
 ## Configuration
 
+In this theme you can add variables to your site config file. The following is the example config:
+
+    baseurl = "http://hbkr.github.io/"
+    languageCode = "ja"
+    title = "KAZUMA IEIRI"
+    theme = "habakarizm"
+    hasCJKLanguage = true
+    Paginate = 10
+
+    [params]
+     subtitle = "I LOVE INTERNET"
+     facebook = "https://facebook.com/ieiri"
+     twitter = "https://twitter.com/hbkr"
+     github = "https://github.com/hbkr"
+     email = "kazuma.ieiri@gmail.com"
+     profile = ""
+     copyright = "Written by Kazuma Ieiri"
+     analytics = "UA-72761907-1"
+     disqus = "kazumaieiri"
+     author = "Kazuma Ieiri"
+
 ## License
 
 MIT License
