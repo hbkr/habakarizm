@@ -5,6 +5,7 @@
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 <link rel="stylesheet" href="/css/custom.css">
@@ -21,5 +22,8 @@
             <a href="/"><img src="{{ .Site.Params.logo }}"></a>
         </div>
         -->
-        {{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ end }}
+        {{ if eq $isHomePage true }}
+            <h1 class="site-title"><a href="{{ .Site.BaseURL }}"> {{ .Site.Title }} </a></h1>
+            {{ with .Site.Params.subtitle }}<span class="sub-title">{{ . }}</span>{{ end }}
+        {{ end }}
     </header>
